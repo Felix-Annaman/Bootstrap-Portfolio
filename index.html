@@ -1,88 +1,153 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Felix Annaman Portfolio</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <header class="jumbotron">
-      <h1 class="display-4">Welcome to My Portfolio!</h1>
-    </header>
-    <main class="container">
-      <section id="home">
-        <h2>Home</h2>
-        <p>Here you can find information about me and my projects.</p>
-      </section>
-      <section id="about">
-        <h2>About</h2>
-        <p>Result-driven, adaptable and an innovative individual. With a dedicated academic background, I have honed my theoretical knowledge and am now eager to embark on a journey of practical experience.</p>
-      </section>
-      <section id="contact">
-        <h2>Contact</h2>
-        <p>Email:felixannaman@outlook.com</p>
-      </section>
-      <section>
-        <h2>Projects</h2>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h3 class="card
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="w3-black">
 
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+        <i class="fa fa-home w3-xxlarge"></i>
+        <p>HOME</p>
+    </a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-user w3-xxlarge"></i>
+        <p>ABOUT</p>
+    </a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-envelope w3-xxlarge"></i>
+        <p>CONTACT</p>
+    </a>
+</nav>
 
-                title">Project 1</h3>
-                <p class="card-text">A marketing agency has hired me to refactor an existing site to make it more accessible.</p>
-                <a href="#" class="btn btn-primary">Learn More</a>
-              </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4">
-            <div class="card-body">
-              <h3 class="card-title">Project 2</h3>
-              <p class="card-text">A portfolio of work can showcase your skills and talents to employers looking to fill a part-time or full-time position. An effective portfolio highlights your strongest work as well as the thought processes behind it. This porjects highlights my portoflio thus far </p>
-              <a href="#" class="btn btn-primary">Learn More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4">
-            <div class="card-body">
-              <h3 class="card-title">Project 3</h3>
-              <p class="card-text">Tasked to write JavaScript code that analyzes the records to calculate</p>
-              <a href="#" class="btn btn-primary">Learn More</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer class="bg-light py-3">
-    <div class="container">
-      <p class="text-center">&copy; 2024 Felix Annaman. All rights reserved.</p>
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+        <a href="#home" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+        <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+        <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
     </div>
-  </footer>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+    <!-- Header/Home -->
+    <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+        <h1 class="w3-jumbo"><span class="w3-hide-small">I'm </span>Felix Annaman.</h1>
+        <img src="images/PROFILE PICTURE.jpg" alt="boy" class="w3-image" width="992" height="1108">
+    </header>
+
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+        <h2 class="w3-text-light-grey">Felix Annaman</h2>
+        <hr style="width:200px" class="w3-opacity">
+        <p>Result-driven, adaptable and an innovative individual.
+            With a dedicated academic background, I have honed my theoretical knowledge and am now eager to embark on a journey of practical experience
+        </p>
+        <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+        <p class="w3-wide">Financial Analysis</p>
+        <div class="w3-white">
+            <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+        </div>
+        <p class="w3-wide">Coding</p>
+        <div class="w3-white">
+            <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+        </div>
+        <a href="Felix Annaman CV  (1).docx" download>
+            <button class="w3-button w3-light-grey w3-padding-large w3-section">
+                <i class="fa fa-download"></i> Download Resume
+            </button>
+        </a>      
+        <!-- End About Section -->
+    </div>
+
+    <!-- Portfolio Section -->
+    <div class="w3-padding-64 w3-content" id="photos">
+        <h2 >My Projects</h2>
+        <hr style="width:200px" class="w3-opacity">
+        <section>
+            <h2>Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="cardtitle">Project 1</h3>
+                            <img src="images/webaccessiblity.png" class="img-fluid" alt="Responsive image">
+                            <p class="card-text">A marketing agency has hired me to refactor an existing site to make it more accessible.</p>
+                            <a href="https://felix-annaman.github.io/Assignment_1-Website_Modernisation/#search-engine-optimization" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Project 2</h3>
+                            <img src="images/portfolio.jpg" class="img-fluid" alt="Responsive image">
+                            <p class="card-text">Tasked to create an effective portfolio highlights your strongest work as well as the thought processes behind it. This porjects highlights my portoflio thus far </p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Project 3</h3>
+                            <img src="images/calculator.jpg" class="img-fluid" alt="Responsive image">
+                            <p class="card-text">Tasked to write JavaScript code that analyzes the records to calculate</p>
+                            <a href="https://github.com/Felix-Annaman/Console-Finances" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="card-text">Project 1 is my Web Accessbility Project. Project 2 links to my developing portfolio. Project 3 links to calculator project.
+        </section>
+    </div>
+    <!-- End Portfolio Section -->
+</div>
+
+<!-- Contact Section -->
+<div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <div class="w3-section">
+        <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>London</p>
+        <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: felixannaman@outlook.com</p>
+    </div><br>
+    <p>Let's get in touch. Send me a message:</p>
+    <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+        <p>
+            <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+                <i class="fa fa-paper-plane"></i> SEND MESSAGE
+            </button>
+        </p>
+    </form>
+    <!-- End Contact Section -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="text-center">&copy; 2024 Felix Annaman. All rights reserved.</p>
+</footer>
+<!-- End footer -->
+
+<!-- END PAGE CONTENT -->
 </body>
 </html>
